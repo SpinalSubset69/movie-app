@@ -1,0 +1,21 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 40%;
+}
+
+.lang-link{     
+    font-size: 18px;
+}
+
+.lang-link:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.4s all ease-in-out;
+}

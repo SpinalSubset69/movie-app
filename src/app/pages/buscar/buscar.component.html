@@ -1,0 +1,13 @@
+<div *ngIf="movies.length === 0" class="col">
+    <div class="row">
+        <h1>No se encontraron resultados!!</h1>
+    </div>
+</div>
+
+
+<div *ngIf="movies.length > 0" class="row">
+    <div class="col">
+        <h1>Resultados: </h1>
+        <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+    </div>
+</div>

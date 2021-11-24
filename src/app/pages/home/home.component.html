@@ -1,0 +1,19 @@
+<div class="header-container">
+  <h1>Cartelera</h1>
+<div class="language-container">
+  <h2>Lenguaje: </h2>
+  <p #txtSpanish (click)="setLang(txtSpanish.innerText)" class="lang-link">Español</p>
+  <p>|</p>
+  <p #txtEnglish (click)="setLang(txtEnglish.innerText)" class="lang-link">English</p>
+</div>
+</div>
+<!-- If theres movies shows the array -->
+<div class="row" *ngIf="movies.length > 0">
+  <div class="col">
+    <app-slideshow [movies]="moviesSlideShow"></app-slideshow>
+  </div>
+</div>
+
+<h1 class="mt-5">Peliculas</h1>
+
+<app-peliculas-poster-grid *ngIf="movies.length > 0" [movies]="movies"></app-peliculas-poster-grid>
